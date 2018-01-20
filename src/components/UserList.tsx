@@ -41,7 +41,6 @@ export class UserList extends React.Component<IProps, IState> {
     const { error, userId } = this.state;
     return (
       <div id="user_list__container">
-        <h1>All Users:</h1>
         {userList.map(user => <UserItem key={user.id} user={user} />)}
         <form onSubmit={this.handleSubmit}>
           <h3>Delete user with ID:</h3>

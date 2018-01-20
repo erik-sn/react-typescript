@@ -4,12 +4,12 @@ A starting react template project based on the Allstate MIP web front end.
 
 ## Features
 
-- ES6 JavaScript with Babel
+- TypeScript
 - React
 - Redux
 - React Router
 - Hot Reloading
-- ESlint
+- TSLint
 - SCSS
 - Autoprefixer
 - Testing with Jest & Enzyme

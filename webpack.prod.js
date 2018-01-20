@@ -100,7 +100,14 @@ module.exports = {
       {
         test: /\.ts(x?)$/,
         exclude: /(node_modules)/,
-        loader: 'awesome-typescript-loader',
+        use: [
+          {
+            loader: 'ts-loader', 
+            options: {
+              configFile: 'tsconfig.prod.json',
+            }
+          }
+        ],
         include: [
           path.resolve(__dirname, 'src'),
         ],

@@ -34,5 +34,4 @@ export class Application extends React.Component<IProps, {}> {
   }
 }
 
-const ConnectedApp = connect<{}, {}, {}>(null, { fetchUsers })(Application);
-export default hot(module)(withRouter<any>(ConnectedApp));
+export default hot(module)(withRouter<any>(connect<{}, {}, {}>(null, { fetchUsers })(Application)));
